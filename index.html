@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wild West Shoes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+ <a href="#" class="logo"><b>WildWestShoe</b></a>
+</a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shoes">Shoes</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+<button class="cart-button" id="cartButton">
+    🛒 Cart <span id="cartCount">0</span>
+</button>
+
+</header>
+
+
+<main>
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <p class="subtitle">NEW COLLECTION</p>
+
+            <h1>
+                STEP INTO
+                <span>YOUR STYLE</span>
+            </h1>
+
+            <p>
+                Get fly with our shoe
+            </p>
+
+            <a href="#shoes" class="shop-button">
+                Shop Now
+            </a>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="logo.png"
+                alt="Black Air Shoe"
+            >
+
+        </div>
+    </section>
+
+
+    <section id="shoes" class="shoes-section">
+
+        <h2>Our Shoes</h2>
+
+        <div class="products">
+
+    <!-- SHOE 1 -->
+    <div class="product-card">
+
+        <img
+            src="shoe1.webp"
+            alt="Black Air Shoe"
+        >
+
+        <h3>CPFM Black Air</h3>
+
+        <p>₱2,499</p>
+        <label for="size1">Size:</label>
+
+<select id="size1">
+    <option value="">Select Size</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+    <option value="44">44</option>
+</select>
+
+    <button class="cart-button" onclick="addToCart(1)">
+        Add to Cart
+    </button>
+    </div>
+
+
+    <!-- SHOE 2 -->
+    <div class="product-card">
+
+        <img
+            src="shoe2.webp"
+            alt="Shoe 2"
+        >
+
+        <h3>Timberland(blac)</h3>
+
+        <p>₱2,299</p>
+        <select id="size1">
+    <option value="">Select Size</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+    <option value="44">44</option>
+</select>
+
+        <button class="cart-button" onclick="addToCart(2)">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <!-- SHOE 3 -->
+    <div class="product-card">
+
+        <img
+            src="shoe3.webp"
+            alt="Shoe 3"
+        >
+
+        <h3>Jordan 5</h3>
+
+        <p>₱2,699</p>
+
+        <select id="size1">
+    <option value="">Select Size</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+    <option value="44">44</option>
+</select>
+
+        <button class="cart-button" onclick="addToCart(3)">
+            Add to Cart
+        </button>
+
+    </div>
+
+
+    <!-- SHOE 4 -->
+    <div class="product-card">
+
+        <img
+            src="shoe4.jpg"
+            alt="Shoe 4"
+        >
+
+        <h3>Jordan 3 x Travis Scott</h3>
+
+        <p>₱1,999</p>
+
+        <select id="size1">
+    <option value="">Select Size</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+    <option value="44">44</option>
+</select>
+
+        <button class="cart-button" onclick="addToCart(4)">
+            Add to Cart
+        </button>
+    </div>
+
+</div>
+
+        </div>
+
+    </section>
+
+
+    <section id="about" class="about">
+
+        <h2>About Us</h2>
+
+        <p>
+          WildWest name is from rapper album (central cee)
+                so welcome to WildWestShoe!
+                check our new collection
+        </p>
+
+    </section>
+
+
+    <section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Follow WildWestShoe on our official social media accounts.</p>
+
+    <div class="social-links">
+
+        <a href="https://www.instagram.com/https://www.instagram.com/drexxiva_//"
+           target="_blank"
+           rel="noopener">
+             Instagram
+        </a>
+
+        <a href="https://www.tiktok.com/https://www.tiktok.com/@drezvrn"
+           target="_blank"
+           rel="noopener">
+             TikTok
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+    <h1>Wild West Shoes</h1>
+
+    
+    <!-- SHOPPING CART -->
+
+<aside class="cart" id="cart">
+
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+
+        <button id="closeCart">×</button>
+    </div>
+
+    <div id="cartItems">
+
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>
+            Total: ₱<span id="cartTotal">0</span>
+        </h3>
+
+        <button id="checkoutButton">
+            Checkout
+        </button>
+
+    </div>
+
+</aside>
+
+<div class="overlay" id="overlay"></div>
+
+<script src="WildWestShoe.js"></script>
+ 
+</body>
+</html>
