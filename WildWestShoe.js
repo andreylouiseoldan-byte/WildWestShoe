@@ -10,30 +10,30 @@
 const products = [
     {
         id: 1,
-        name: "Black Air",
+        name: "CPFM Black Air",
         price: 2499,
-        image: "shoe1.webp"
+        image: "images/shoe1.webp"
     },
 
     {
         id: 2,
-        name: "Street Runner",
-        price: 2299,
-        image: "shoe2.webp"
+        name: "Timberland(black)",
+        price: 2999,
+        image: "images/shoe2.webp"
     },
 
     {
         id: 3,
-        name: "Urban Classic",
-        price: 2699,
-        image: "shoe3.webp"
+        name: "Jordan 5",
+        price: 2499,
+        image: "images/shoe3.webp"
     },
 
     {
         id: 4,
-        name: "Daily Flex",
-        price: 1999,
-        image: "shoe4.png"
+        name: "Jordan 3 x Travis Scott",
+        price: 2999,
+        image: "images/shoe4.jpg"
     }
 ];
 
